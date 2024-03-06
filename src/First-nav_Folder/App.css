@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+HTML{
+  scroll-behavior: smooth;
+}
+.First__nav{
+  background-color: rgb(3, 3, 107);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.First__nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.First__nav ul li a{
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+}
+.First__nav .toggle{
+  display: none;
+}
+.First__nav .toggle-menu{
+  
+  display: none;
+}
+
+
+
+.First__nav .toggle-menu li{
+  list-style: none;
+}
+.First__nav .toggle-menu li a{
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.toggle-menu div span{
+  font-size: 22px;
+  padding: 8px;
+  
+}
+.toggle-menu div span a i{
+  color: white;
+}
+@media (max-width:950px)
+{
+  .First__nav ul{
+    display: none;
+  }
+  .First__nav{
+    position:   sticky relative;
+   
+  }
+  .First__nav .toggle-menu .cross{
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    
+  }
+  .First__nav .toggle-menu{
+    display: block;
+  }
+  .First__nav .toggle{
+    display: block;
+    font-size: 26px;
+    padding: 15px;
+    position: absolute;
+    left: 10px;
+
+  }
+  .First__nav .toggle-menu{
+    background-color:  rgb(3, 3, 107);
+    width: 200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    transform: translateX(-100%);
+    transition: all 1s;
+    z-index: 8;
+   
+  }
+  .First__nav .toggle-active{
+    transform: translateX(0);
+  }
+}

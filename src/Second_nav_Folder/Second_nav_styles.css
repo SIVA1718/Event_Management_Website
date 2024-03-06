@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.second_nav{
+    margin-top: 0;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.second_nav .second-nav-1{
+    font-size: 22px;
+}
+.second_nav .second-nav-2 i{
+    font-size: 30px;
+    background-color: rgb(3, 3, 107);;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.second_nav .second-nav-2 span{
+    font-size: 22px;
+}
+.second_nav .second-nav-2{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.second_nav .second-nav-2 .fa-envelope{
+    background-color: orange;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.second_nav .second-nav-2  #forEnvelop{
+    background-color: orange;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-right: 5px;
+    color: white;
+}
+@media (max-width:950px)
+{
+    .second_nav .second-nav-2 .phone_num,.second_nav .second-nav-2 .envelop_msg{
+        display: none;
+    }   
+    .second_nav .second-nav-2 span .fa-envelope{
+        font-size: 26px;
+        background-color: orange;
+        
+    }
+   
+}
+@media (max-width:500px)
+{
+    .second_nav .second-nav-2{
+        display: none;
+    }
+}

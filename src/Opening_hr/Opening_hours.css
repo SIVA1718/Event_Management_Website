@@ -1,0 +1,49 @@
+.Opening_hr_sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Opening_hr_sec .Opening_1{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 50px 0;
+    color: navy;
+}
+.Opening_hr_sec .Opening_2 table{
+padding: 20px;
+width: 600px;
+text-align: center;
+
+}
+.Opening_hr_sec .Opening_2 table tr:nth-child(even){
+   
+    background-color: rgb(226, 209, 209);
+
+   
+}
+.Opening_hr_sec .Opening_2 table tr:nth-child(odd){
+   
+    background-color: rgb(152, 148, 148);
+
+   
+}
+.Opening_hr_sec .Opening_2 table tr td{
+    padding: 15px;
+}
+@media (max-width:565px)
+{
+   
+    .Opening_hr_sec .Opening_2 table{
+        width: 450px;
+    }
+    .Opening_hr_sec .Opening_2{
+        margin: 10px;
+    }
+}
+@media (max-width:415px)
+{
+    .Opening_hr_sec .Opening_2 table{
+        width: 100%;
+    }
+}
